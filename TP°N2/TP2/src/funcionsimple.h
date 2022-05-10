@@ -1,0 +1,18 @@
+/*
+ * funcionsimple.h
+ *
+ *  Created on: 5 oct. 2021
+ *      Author: pablo
+ */
+
+#ifndef FUNCIONSIMPLE_H_
+#define FUNCIONSIMPLE_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include "Menudeopciones.h"
+
+
+char OpeternerNombre(char mensaje[], int tam);
+float Salario(char mensaje[50]);
+
+#endif /* FUNCIONSIMPLE_H_ */

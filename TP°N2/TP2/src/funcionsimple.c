@@ -1,0 +1,22 @@
+#include "funcionsimple.h"
+
+char OpeternerNombre(char mensaje[], int tam) {
+
+	char nombre[50];
+
+	printf("%s", mensaje[tam]);
+	scanf("%s", nombre);
+
+	return nombre;
+
+}
+
+float Salario(char mensaje[50]) {
+
+	float sueldo;
+
+	printf("%s", mensaje);
+	scanf("%f", sueldo);
+
+	return sueldo;
+}

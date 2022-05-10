@@ -1,0 +1,20 @@
+#include "funcionsimple.h"
+
+char NombroyApellido(char mensaje[50]){
+
+	char nombre[51];
+
+	printf("%s",mensaje);
+	scanf("%s",nombre);
+
+	return nombre;
+}
+
+float Salario(char mensaje[50]){
+
+	float sueldo;
+
+	printf("%s",mensaje);
+	scanf("%f",sueldo):
+
+}

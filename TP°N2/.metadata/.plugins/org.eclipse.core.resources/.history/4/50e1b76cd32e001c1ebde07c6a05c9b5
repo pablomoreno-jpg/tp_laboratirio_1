@@ -1,0 +1,6 @@
+#include "funcionsimple.h"
+
+printf("%s %s", lista->apellido,lista->nombre){
+
+
+}

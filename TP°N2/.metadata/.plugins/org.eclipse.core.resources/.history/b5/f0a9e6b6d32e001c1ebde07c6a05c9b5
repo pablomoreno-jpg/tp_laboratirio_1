@@ -1,0 +1,11 @@
+#include "funcionsimple.h"
+
+void NombroyApellido(char mensaje[50]){
+
+	char nombre[51];
+
+	printf("%s",mensaje);
+	scanf("%s",nombre);
+
+}
+

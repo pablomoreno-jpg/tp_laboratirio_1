@@ -1,0 +1,11 @@
+#include "funcionsimple.h"
+
+void NombroyApellido(char mensaje[50]){
+
+	float sueldo;
+
+	printf("%s",mensaje);
+	scanf("%f",sueldo);
+
+}
+

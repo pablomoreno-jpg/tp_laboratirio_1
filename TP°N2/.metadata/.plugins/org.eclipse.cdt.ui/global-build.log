@@ -1,0 +1,1578 @@
+16:05:41 **** Rebuild of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:16:2: warning: implicit declaration of function 'setbuff' [-Wimplicit-function-declaration]
+  setbuff (stdout,NULL);
+  ^~~~~~~
+..\src\TP2.c:17:2: error: unknown type name 'eEmplado'
+  eEmplado empleado;
+  ^~~~~~~~
+..\src\TP2.c:20:2: warning: implicit declaration of function 'Listado' [-Wimplicit-function-declaration]
+  Listado(empleado);
+  ^~~~~~~
+16:06:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:17:2: error: unknown type name 'eEmplado'
+  eEmplado empleado;
+  ^~~~~~~~
+..\src\TP2.c:20:2: warning: implicit declaration of function 'Listado' [-Wimplicit-function-declaration]
+  Listado(empleado);
+  ^~~~~~~
+16:06:46 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+16:07:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+16:09:16 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'Listado':
+..\src\estructuras.c:10:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s",&sujeto.nombre);
+          ^
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+16:44:10 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'Listado':
+..\src\estructuras.c:10:2: error: too many arguments to function 'gets'
+  gets("%s",&sujeto.nombre);
+  ^~~~
+In file included from ..\src\estructuras.h:10:0,
+                 from ..\src\estructuras.c:1:
+c:\mingw\include\stdio.h:676:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+16:44:27 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'Listado':
+..\src\estructuras.c:10:2: warning: implicit declaration of function 'get' [-Wimplicit-function-declaration]
+  get("%s",&sujeto.nombre);
+  ^~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+src\estructuras.o: In function `Listado':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/estructuras.c:10: undefined reference to `get'
+collect2.exe: error: ld returned 1 exit status
+16:44:56 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'Listado':
+..\src\estructuras.c:10:2: error: too many arguments to function 'getchar'
+  getchar("%s",&sujeto.nombre);
+  ^~~~~~~
+In file included from ..\src\estructuras.h:10:0,
+                 from ..\src\estructuras.c:1:
+c:\mingw\include\stdio.h:709:43: note: declared here
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int getchar (void)
+                                           ^~~~~~~
+16:45:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'Listado':
+..\src\estructuras.c:10:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s",&sujeto.nombre);
+          ^
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+17:23:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:18:12: warning: unused variable 'empleado' [-Wunused-variable]
+  eEmpleado empleado;
+            ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+17:43:49 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:20:2: error: too few arguments to function 'PedirId'
+  PedirId("ingrese un id: ");
+  ^~~~~~~
+In file included from ..\src\TP2.c:13:0:
+..\src\estructuras.h:25:5: note: declared here
+ int PedirId (char mensaje[],int id);
+     ^~~~~~~
+..\src\TP2.c:18:12: warning: unused variable 'empleado' [-Wunused-variable]
+  eEmpleado empleado;
+            ^~~~~~~~
+17:43:58 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:18:12: warning: unused variable 'empleado' [-Wunused-variable]
+  eEmpleado empleado;
+            ^~~~~~~~
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:19:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s",&nombre);
+          ^
+..\src\estructuras.c:20:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s",&apellid);
+          ^
+..\src\estructuras.c:22:2: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  strcat(strcpy (completo,nombre),apellid);
+  ^~~~~~
+..\src\estructuras.c:22:2: warning: incompatible implicit declaration of built-in function 'strcat'
+..\src\estructuras.c:22:2: note: include '<string.h>' or provide a declaration of 'strcat'
+..\src\estructuras.c:22:9: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  strcat(strcpy (completo,nombre),apellid);
+         ^~~~~~
+..\src\estructuras.c:22:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\estructuras.c:22:9: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\estructuras.c:22:17: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+  strcat(strcpy (completo,nombre),apellid);
+                 ^~~~~~~~
+..\src\estructuras.c:22:17: note: expected 'char *' but argument is of type 'char'
+..\src\estructuras.c:22:2: warning: 'completo' is used uninitialized in this function [-Wuninitialized]
+  strcat(strcpy (completo,nombre),apellid);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+17:44:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c:19:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &apellid);
+          ^
+..\src\estructuras.c:21:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  strcpy(completo, nombre, apellid);
+  ^~~~~~
+..\src\estructuras.c:21:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\estructuras.c:21:2: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\estructuras.c:21:9: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+  strcpy(completo, nombre, apellid);
+         ^~~~~~~~
+..\src\estructuras.c:21:9: note: expected 'char *' but argument is of type 'char'
+..\src\estructuras.c:21:2: error: too many arguments to function 'strcpy'
+  strcpy(completo, nombre, apellid);
+  ^~~~~~
+17:49:24 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c:17:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return nombre;
+         ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+17:50:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:30:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'eEmpleado {aka struct <anonymous>}' [-Wformat=]
+  printf("%d%s%s",carga);
+           ^
+..\src\TP2.c:30:13: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  printf("%d%s%s",carga);
+             ^
+..\src\TP2.c:30:15: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  printf("%d%s%s",carga);
+               ^
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+17:52:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+17:53:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:14:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+17:53:56 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+17:56:35 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c:17:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return nombre;
+         ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'CargaDeEmpleado':
+..\src\TP2.c:26:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+15:14:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:23:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+15:16:03 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:23:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+15:16:31 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:23:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+15:17:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c: At top level:
+..\src\estructuras.c:19:6: error: conflicting types for 'CargaDeEmpleado'
+ void CargaDeEmpleado (eEmpleado carga){
+      ^~~~~~~~~~~~~~~
+In file included from ..\src\estructuras.c:1:0:
+..\src\estructuras.h:28:11: note: previous declaration of 'CargaDeEmpleado' was here
+ eEmpleado CargaDeEmpleado (void);
+           ^~~~~~~~~~~~~~~
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:21:12: error: 'carga' redeclared as different kind of symbol
+  eEmpleado carga;
+            ^~~~~
+..\src\estructuras.c:19:33: note: previous definition of 'carga' was here
+ void CargaDeEmpleado (eEmpleado carga){
+                                 ^~~~~
+15:18:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: error: too few arguments to function 'CargaDeEmpleado'
+  CargaDeEmpleado();
+  ^~~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:13:0:
+..\src\estructuras.h:28:6: note: declared here
+ void CargaDeEmpleado (eEmpleado carga);
+      ^~~~~~~~~~~~~~~
+15:18:45 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: error: too few arguments to function 'CargaDeEmpleado'
+  CargaDeEmpleado();
+  ^~~~~~~~~~~~~~~
+In file included from ..\src\TP2.c:13:0:
+..\src\estructuras.h:28:6: note: declared here
+ void CargaDeEmpleado (eEmpleado carga);
+      ^~~~~~~~~~~~~~~
+15:19:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'NombreConApellido':
+..\src\estructuras.c:15:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char **' [-Wformat=]
+  scanf("%s", &nombre);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:23:2: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+15:29:47 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'PedirNombre':
+..\src\estructuras.c:14:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s", &carga->nombre);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:22:40: warning: passing argument 2 of 'PedirId' makes pointer from integer without a cast [-Wint-conversion]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ^~~~~
+..\src\estructuras.c:3:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'int'
+ void PedirId(char mensaje[], eEmpleado carga[]) {
+      ^~~~~~~
+..\src\estructuras.c:23:48: warning: passing argument 2 of 'PedirNombre' from incompatible pointer type [-Wincompatible-pointer-types]
+  PedirNombre("ingrese el nombre del empleado", carga.nombre);
+                                                ^~~~~
+..\src\estructuras.c:10:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ void PedirNombre(char mensaje[],eEmpleado carga []) {
+      ^~~~~~~~~~~
+..\src\estructuras.c:22:45: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ~~~~~^~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+15:34:28 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'PedirNombre':
+..\src\estructuras.c:14:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s", &carga->nombre);
+          ^
+..\src\estructuras.c: In function 'PedirApellido':
+..\src\estructuras.c:22:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s", &carga->apellido);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:30:40: warning: passing argument 2 of 'PedirId' makes pointer from integer without a cast [-Wint-conversion]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ^~~~~
+..\src\estructuras.c:3:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'int'
+ void PedirId(char mensaje[], eEmpleado carga[]) {
+      ^~~~~~~
+..\src\estructuras.c:31:48: warning: passing argument 2 of 'PedirNombre' from incompatible pointer type [-Wincompatible-pointer-types]
+  PedirNombre("ingrese el nombre del empleado", carga.nombre);
+                                                ^~~~~
+..\src\estructuras.c:10:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ void PedirNombre(char mensaje[], eEmpleado carga[]) {
+      ^~~~~~~~~~~
+..\src\estructuras.c:32:51: warning: passing argument 2 of 'PedirApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+  PedirApellido("ingrese el apellido del empledo", carga.apellido);
+                                                   ^~~~~
+..\src\estructuras.c:18:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ void PedirApellido(char mensaje[], eEmpleado carga[]){
+      ^~~~~~~~~~~~~
+..\src\estructuras.c:30:45: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ~~~~~^~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+15:34:59 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\estructuras.o" "..\\src\\estructuras.c" 
+..\src\estructuras.c: In function 'PedirNombre':
+..\src\estructuras.c:14:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s", &carga->nombre);
+          ^
+..\src\estructuras.c: In function 'PedirApellido':
+..\src\estructuras.c:22:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[51]' [-Wformat=]
+  scanf("%s", &carga->apellido);
+          ^
+..\src\estructuras.c: In function 'CargaDeEmpleado':
+..\src\estructuras.c:30:40: warning: passing argument 2 of 'PedirId' makes pointer from integer without a cast [-Wint-conversion]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ^~~~~
+..\src\estructuras.c:3:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'int'
+ void PedirId(char mensaje[], eEmpleado carga[]) {
+      ^~~~~~~
+..\src\estructuras.c:31:48: warning: passing argument 2 of 'PedirNombre' from incompatible pointer type [-Wincompatible-pointer-types]
+  PedirNombre("ingrese el nombre del empleado", carga.nombre);
+                                                ^~~~~
+..\src\estructuras.c:10:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ void PedirNombre(char mensaje[], eEmpleado carga[]) {
+      ^~~~~~~~~~~
+..\src\estructuras.c:32:51: warning: passing argument 2 of 'PedirApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+  PedirApellido("ingrese el apellido del empledo", carga.apellido);
+                                                   ^~~~~
+..\src\estructuras.c:18:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ void PedirApellido(char mensaje[], eEmpleado carga[]){
+      ^~~~~~~~~~~~~
+..\src\estructuras.c:30:45: warning: 'carga.id' is used uninitialized in this function [-Wuninitialized]
+  PedirId("ingrese el id del empleado", carga.id);
+                                        ~~~~~^~~
+gcc -o TP2.exe "src\\TP2.o" "src\\estructuras.o" 
+Info: Nothing to build for TP2
+08:40:01 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+In file included from ..\src\funciones.c:1:0:
+..\src\funciones.h:21:16: error: unknown type name 'eEmpleado'
+ int DarDeAlta (eEmpleado cargar[]);
+                ^~~~~~~~~
+..\src\funciones.c: In function 'DarDeBaja':
+..\src\funciones.c:3:1: error: expected '{' at end of input
+ int DarDeBaja ()
+ ^~~
+..\src\funciones.c:3:1: warning: control reaches end of non-void function [-Wreturn-type]
+ int DarDeBaja ()
+ ^~~
+08:50:31 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+In file included from ..\src\funciones.c:1:0:
+..\src\funciones.h:19:16: error: unknown type name 'eEmpleado'
+ int DarDeAlta (eEmpleado cargar[]);
+                ^~~~~~~~~
+..\src\funciones.c: In function 'DarDeBaja':
+..\src\funciones.c:7:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:38:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+In file included from ..\src\funcionsimple.c:1:0:
+..\src\funcionsimple.h:13:28: error: unknown type name 'eEmpleado'
+ char CargarNombreApellido (eEmpleado nombre[20]);
+                            ^~~~~~~~~
+..\src\funcionsimple.c:3:28: error: unknown type name 'eEmpleado'
+ char CargarNombreApellido (eEmpleado nombre[20]){
+                            ^~~~~~~~~
+17:19:08 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+In file included from ..\src\funciones.c:1:0:
+..\src\funciones.h:14:32: error: unknown type name 'eEmpleado'
+ int InicializacionDeEmpelados (eEmpleado lista, int largo);
+                                ^~~~~~~~~
+..\src\funciones.c:3:32: error: unknown type name 'eEmpleado'
+ int InicializacionDeEmpelados (eEmpleado lista, int largo){
+                                ^~~~~~~~~
+17:23:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:15:32: error: unknown type name 'eEmpleado'
+ int InicializacionDeEmpelados (eEmpleado lista, int largo);
+                                ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+17:36:38 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'InicializacionDeEmpelados':
+..\src\funciones.c:7:6: error: redeclaration of 'retorno' with no linkage
+  int retorno = -1;
+      ^~~~~~~
+..\src\funciones.c:5:6: note: previous declaration of 'retorno' was here
+  int retorno;
+      ^~~~~~~
+18:18:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:16:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado* lista, int tamanio);
+                      ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+18:18:35 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:16:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado lista[], int tamanio);
+                      ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+18:20:04 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:16:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:6:12: error: array size missing in 'empleado'
+  eEmpleado empleado[];
+            ^~~~~~~~
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+18:20:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:16:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+18:20:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:14:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+18:21:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:14:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+18:21:21 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:14:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado, int tamanio);
+                      ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+20:23:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:13:21: error: unknown type name 'eEmpleado'
+ int CargarEmpleado (eEmpleado empleado, int tampanio);
+                     ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+20:23:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:24:55 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:28:49 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:29:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'CargarEmpleado':
+..\src\funciones.c:10:15: error: subscripted value is neither array nor pointer nor vector
+   if (empleado[i].estavacio != 1) {
+               ^
+20:32:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\Menudeopciones.o: In function `Menu':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/Menudeopciones.c:22: undefined reference to `IniciarEmpleado'
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:33:08 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'CargarEmpleado' [-Wimplicit-function-declaration]
+    CargarEmpleado(empleado, TAM);
+    ^~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:35:54 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:14:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+20:36:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\TP2.c:13:
+..\src\funciones.h:14:22: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado (eEmpleado empleado[], int tamanio);
+                      ^~~~~~~~~
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+20:37:18 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'Menudeopciones' [-Wimplicit-function-declaration]
+  Menudeopciones();
+  ^~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:37:39 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `Menudeopciones'
+collect2.exe: error: ld returned 1 exit status
+20:38:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.h:12:0,
+                 from ..\src\Menudeopciones.c:1:
+..\src\funciones.h:13:21: error: unknown type name 'eEmpleado'
+ int IniciarEmpleado(eEmpleado lista[], int tamanio);
+                     ^~~~~~~~~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+20:40:15 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: error: 'M' undeclared (first use in this function)
+  M
+  ^
+..\src\TP2.c:19:2: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TP2.c:20:1: error: expected ';' before '}' token
+ }
+ ^
+20:40:25 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+20:41:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+20:41:45 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+..\src\TP2.c: In function 'main':
+..\src\TP2.c:19:2: warning: implicit declaration of function 'opcion' [-Wimplicit-function-declaration]
+  opcion();
+  ^~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\TP2.o: In function `main':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/TP2.c:19: undefined reference to `opcion'
+collect2.exe: error: ld returned 1 exit status
+20:42:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+20:43:01 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+20:44:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado , TAM);
+    ^~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+20:45:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado, TAM);
+    ^~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+20:46:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+20:49:34 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+20:50:45 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'IniciarEmpleado' [-Wimplicit-function-declaration]
+    IniciarEmpleado(empleado, TAM);
+    ^~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+20:58:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:6:12: warning: unused variable 'empleado' [-Wunused-variable]
+  eEmpleado empleado;
+            ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:12:14: error: invalid type argument of '->' (have 'eEmpleado {aka struct <anonymous>}')
+   if(lista[i]->estavacio !=1){
+              ^~
+20:59:30 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:12:14: error: invalid type argument of '->' (have 'eEmpleado {aka struct <anonymous>}')
+   if(lista[i]->estavacio !=1){
+              ^~
+20:59:56 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+21:00:18 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+21:00:39 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+21:05:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+In file included from ..\src\Menudeopciones.c:1:0:
+..\src\Menudeopciones.h:15:6: error: flexible array member not at end of struct
+  int id[];
+      ^~
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+21:06:07 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP2.o" "..\\src\\TP2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+21:14:31 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+21:14:58 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+10:44:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:24:5: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+     DarDeAlta(&empleado, TAM);
+     ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+10:45:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+10:45:38 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+11:28:33 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+11:28:48 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+11:29:35 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+11:31:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:32:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+11:33:59 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:34:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:34:48 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:35:15 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:36:33 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+11:58:24 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+11:59:39 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:00:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:08:47 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:10:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return nombre;
+         ^~~~~~
+..\src\funcionsimple.c:10:9: warning: function returns address of local variable [-Wreturn-local-addr]
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:12:04 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:10:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return nombre;
+         ^~~~~~
+..\src\funcionsimple.c:10:9: warning: function returns address of local variable [-Wreturn-local-addr]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre =  PedirNombreoApellido("ingrese el nombre del empleado");
+                  ^
+12:12:39 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+12:12:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:13:25 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:12:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return nombre;
+         ^~~~~~
+..\src\funcionsimple.c:12:9: warning: function returns address of local variable [-Wreturn-local-addr]
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:13:32 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:16:14 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c:3:43: error: unknown type name 'eEmpleado'
+ char PedirNombreoApellido(char mensaje[], eEmpleado empleado) {
+                                           ^~~~~~~~~
+12:16:41 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c:3:6: error: conflicting types for 'PedirNombreoApellido'
+ char PedirNombreoApellido(char mensaje[], eEmpleado empleado) {
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\funcionsimple.c:1:0:
+..\src\funcionsimple.h:14:6: note: previous declaration of 'PedirNombreoApellido' was here
+ char PedirNombreoApellido(char nombre[51]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:10:11: error: incompatible types when assigning to type 'eEmpleado {aka struct <anonymous>}' from type 'char *'
+  empleado = nombre;
+           ^
+..\src\funcionsimple.c:12:9: error: incompatible types when returning type 'eEmpleado {aka struct <anonymous>}' but 'char' was expected
+  return empleado;
+         ^~~~~~~~
+..\src\funcionsimple.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+12:17:09 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c:3:6: error: conflicting types for 'PedirNombreoApellido'
+ char PedirNombreoApellido(char mensaje[], eEmpleado empleado) {
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\funcionsimple.c:1:0:
+..\src\funcionsimple.h:14:6: note: previous declaration of 'PedirNombreoApellido' was here
+ char PedirNombreoApellido(char nombre[51]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:11:9: error: incompatible types when returning type 'eEmpleado {aka struct <anonymous>}' but 'char' was expected
+  return empleado;
+         ^~~~~~~~
+..\src\funcionsimple.c:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+12:17:16 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c:3:6: error: conflicting types for 'PedirNombreoApellido'
+ char PedirNombreoApellido(char mensaje[], eEmpleado empleado) {
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\funcionsimple.c:1:0:
+..\src\funcionsimple.h:14:6: note: previous declaration of 'PedirNombreoApellido' was here
+ char PedirNombreoApellido(char nombre[51]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+12:17:25 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c:3:6: error: conflicting types for 'PedirNombreoApellido'
+ char PedirNombreoApellido(char mensaje[], eEmpleado empleado[]) {
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\funcionsimple.c:1:0:
+..\src\funcionsimple.h:14:6: note: previous declaration of 'PedirNombreoApellido' was here
+ char PedirNombreoApellido(char nombre[51]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+12:17:37 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:4: error: too few arguments to function 'PedirNombreoApellido'
+    PedirNombreoApellido("ingrese el nombre del empleado: ");
+    ^~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:14:6: note: declared here
+ char PedirNombreoApellido(char nombre[51],eEmpleado empleado[]);
+      ^~~~~~~~~~~~~~~~~~~~
+12:18:34 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:59: warning: passing argument 2 of 'PedirNombreoApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+    PedirNombreoApellido("ingrese el nombre del empleado", lista->nombre)
+                                                           ^~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:14:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ char PedirNombreoApellido(char nombre[51],eEmpleado empleado[]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funciones.c:20:3: error: expected ';' before '}' token
+   }
+   ^
+12:18:47 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:59: warning: passing argument 2 of 'PedirNombreoApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+    PedirNombreoApellido("ingrese el nombre del empleado", lista->nombre);
+                                                           ^~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:14:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ char PedirNombreoApellido(char nombre[51],eEmpleado empleado[]);
+      ^~~~~~~~~~~~~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:18:55 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:19:38 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombreoApellido':
+..\src\funcionsimple.c:10:11: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  empleado = nombre;
+           ^
+..\src\funcionsimple.c:12:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+12:20:38 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:22:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+12:24:19 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:26:06 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:61: warning: passing argument 2 of 'PedirNombreoApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+    PedirNombreoApellido("ingrese el nombre del empleado: ", lista->nombre);
+                                                             ^~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:14:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ char PedirNombreoApellido(char nombre[51],eEmpleado empleado[]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funciones.c:17:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+    printf("")
+           ^~
+..\src\funciones.c:21:3: error: expected ';' before '}' token
+   }
+   ^
+12:26:23 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:61: warning: passing argument 2 of 'PedirNombreoApellido' from incompatible pointer type [-Wincompatible-pointer-types]
+    PedirNombreoApellido("ingrese el nombre del empleado: ", lista->nombre);
+                                                             ^~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:14:6: note: expected 'eEmpleado * {aka struct <anonymous> *}' but argument is of type 'char *'
+ char PedirNombreoApellido(char nombre[51],eEmpleado empleado[]);
+      ^~~~~~~~~~~~~~~~~~~~
+..\src\funciones.c:17:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+    printf("");
+           ^~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+12:27:13 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+Info: Nothing to build for TP2
+19:10:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombre':
+..\src\funcionsimple.c:8:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:17:11: warning: zero-length ms_printf format string [-Wformat-zero-length]
+    printf("");
+           ^~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+19:10:58 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+19:15:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombre':
+..\src\funcionsimple.c:8:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+..\src\funcionsimple.c: In function 'PedirApellido':
+..\src\funcionsimple.c:16:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+19:16:26 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'PedirNombre':
+..\src\funcionsimple.c:8:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+..\src\funcionsimple.c: In function 'PedirApellido':
+..\src\funcionsimple.c:16:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return empleado;
+         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+19:20:45 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'salario':
+..\src\funcionsimple.c:20:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo->salario);
+          ^
+..\src\funcionsimple.c:22:9: error: incompatible types when returning type 'eEmpleado * {aka struct <anonymous> *}' but 'float' was expected
+  return sueldo;
+         ^~~~~~
+..\src\funcionsimple.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+19:21:03 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:17:4: error: 'salario' undeclared (first use in this function)
+    salario
+    ^~~~~~~
+..\src\funciones.c:17:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\funciones.c:18:3: error: expected ';' before '}' token
+   }
+   ^
+19:22:00 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'salario':
+..\src\funcionsimple.c:20:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo->salario);
+          ^
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\funciones.o: In function `DarDeAlta':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/funciones.c:17: undefined reference to `Salario'
+collect2.exe: error: ld returned 1 exit status
+19:30:11 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'salario':
+..\src\funcionsimple.c:20:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo->salario);
+          ^
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\funciones.o: In function `DarDeAlta':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/funciones.c:17: undefined reference to `Salario'
+collect2.exe: error: ld returned 1 exit status
+19:30:33 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:17:39: error: expected expression before ')' token
+    Salario("el salario del empleado", );
+                                       ^
+19:30:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:17:4: error: too few arguments to function 'Salario'
+    Salario("el salario del empleado");
+    ^~~~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:16:6: note: declared here
+ void Salario(char mesaje[51], eEmpleado sueldo[]);
+      ^~~~~~~
+19:31:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:17:44: error: expected expression before ']' token
+    Salario("el salario del empleado",lista[]);
+                                            ^
+19:31:11 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\funciones.o: In function `DarDeAlta':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/funciones.c:17: undefined reference to `Salario'
+collect2.exe: error: ld returned 1 exit status
+19:32:00 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'salario':
+..\src\funcionsimple.c:20:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo->salario);
+          ^
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+src\funciones.o: In function `DarDeAlta':
+C:\Users\pablo\eclipse-workspace\laboratorio\Trabajo Practico\trabajo practico 2\TP2\Debug/../src/funciones.c:17: undefined reference to `Salario'
+collect2.exe: error: ld returned 1 exit status
+19:36:02 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'salario':
+..\src\funcionsimple.c:20:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo->salario);
+          ^
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+19:40:50 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+19:42:00 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+19:42:42 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file TP2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:42:43 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+19:42:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+19:42:58 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menudeopciones.o" "..\\src\\Menudeopciones.c" 
+..\src\Menudeopciones.c: In function 'Menu':
+..\src\Menudeopciones.c:23:4: warning: implicit declaration of function 'DarDeAlta' [-Wimplicit-function-declaration]
+    DarDeAlta(&empleado, TAM);
+    ^~~~~~~~~
+gcc -o TP2.exe "src\\Menudeopciones.o" "src\\TP2.o" "src\\funciones.o" "src\\funcionsimple.o" 
+Info: Nothing to build for TP2
+19:55:51 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:19: error: assignment to expression with array type
+    lista->apellido= NombroyApellido("ingrese el apelldio del empleado: ");
+                   ^
+..\src\funciones.c:17:18: error: void value not ignored as it ought to be
+    lista->salario= Salario("ingrese el salario del empleado: ");
+                  ^
+19:58:17 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+19:58:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'Salario':
+..\src\funcionsimple.c:17:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo);
+          ^
+..\src\funcionsimple.c:17:2: warning: 'sueldo' is used uninitialized in this function [-Wuninitialized]
+  scanf("%f", sueldo);
+  ^~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+..\src\funciones.c:17:19: error: void value not ignored as it ought to be
+    lista->salario = Salario("ingrese el salario del empleado: ");
+                   ^
+20:00:06 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+..\src\funciones.c:17:19: error: void value not ignored as it ought to be
+    lista->salario = Salario("ingrese el salario del empleado: ");
+                   ^
+20:00:40 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'Salario':
+..\src\funcionsimple.c:17:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo);
+          ^
+..\src\funcionsimple.c:17:2: warning: 'sueldo' is used uninitialized in this function [-Wuninitialized]
+  scanf("%f", sueldo);
+  ^~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+..\src\funciones.c:17:19: error: void value not ignored as it ought to be
+    lista->salario = Salario("ingrese el salario del empleado: ");
+                   ^
+20:00:40 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+..\src\funciones.c:17:19: error: void value not ignored as it ought to be
+    lista->salario = Salario("ingrese el salario del empleado: ");
+                   ^
+20:01:52 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:18: error: assignment to expression with array type
+    lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+                  ^
+..\src\funciones.c:16:20: error: assignment to expression with array type
+    lista->apellido = NombroyApellido("ingrese el apelldio del empleado: ");
+                    ^
+20:07:16 **** Incremental Build of configuration Debug for project TP2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionsimple.o" "..\\src\\funcionsimple.c" 
+..\src\funcionsimple.c: In function 'OpeternerNombre':
+..\src\funcionsimple.c:6:11: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("%s",mensaje[tam]);
+           ^
+..\src\funcionsimple.c:7:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'eEmpleado {aka struct <anonymous>}' [-Wformat=]
+  scanf("%s",dato);
+          ^
+..\src\funcionsimple.c: In function 'Salario':
+..\src\funcionsimple.c:17:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  scanf("%f", sueldo);
+          ^
+..\src\funcionsimple.c:17:2: warning: 'sueldo' is used uninitialized in this function [-Wuninitialized]
+  scanf("%f", sueldo);
+  ^~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'DarDeAlta':
+..\src\funciones.c:15:20: error: incompatible type for argument 1 of 'OpeternerNombre'
+    OpeternerNombre(lista->nombre,"ingrese el nombre del empleado",50);
+                    ^~~~~
+In file included from ..\src\funciones.h:10:0,
+                 from ..\src\funciones.c:1:
+..\src\funcionsimple.h:15:6: note: expected 'eEmpleado {aka struct <anonymous>}' but argument is of type 'char *'
+ void OpeternerNombre(eEmpleado dato,char mensaje[], int tam);
+      ^~~~~~~~~~~~~~~

@@ -1,0 +1,23 @@
+#include "funciones.h"
+
+int DarDeAlta(eEmpleado lista[], int tamanio) {
+
+	int i;
+	int retorno;
+	retorno = 0;
+
+	for (i = 0; i <= tamanio; i++) {
+
+		if (lista[i].estavacio != 1) {
+
+			lista[i].id = i;
+
+			lista->nombre = NombroyApellido("ingrese el nombre del empleado: ");
+			lista->apellido= NombroyApellido("ingrese el apelldio del empleado: ");
+
+		}
+
+	}
+
+	return retorno;
+}

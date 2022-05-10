@@ -1,0 +1,9 @@
+#include "funcionsimple.h"
+
+void NombroyApellido(char mensaje[50]){
+
+
+
+
+}
+

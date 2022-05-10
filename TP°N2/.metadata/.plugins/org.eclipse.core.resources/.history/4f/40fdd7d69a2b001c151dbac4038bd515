@@ -1,0 +1,49 @@
+#include "Menudeopciones.h"
+#define TAM 900
+
+int Menu(int opcion) {
+
+	int retorno;
+	int eleccion;
+	int continuacion;
+
+	continuacion = 1;
+	retorno = 0;
+
+	Opciones();
+
+	printf("elija que queiere hacer con el empleado: ");
+	scanf("%d", &eleccion);
+
+	while (continuacion == 1) {
+		switch (eleccion) {
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			printf("Adios ... ");
+			continuacion = 0;
+			break;
+		default:
+			printf("eleccion invalida, eliga una opcion predeterminada ")
+			break;
+		}
+	}
+
+	return retorno;
+}
+
+void Opciones(void) {
+
+	printf("1) Dar de Alta");
+	printf("2) Modificar");
+	printf("3) Dar de baja");
+	printf("4) informar");
+	printf("5) salir");
+
+}

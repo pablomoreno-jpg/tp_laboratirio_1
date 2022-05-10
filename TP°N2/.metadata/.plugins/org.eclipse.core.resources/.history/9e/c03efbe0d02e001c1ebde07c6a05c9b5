@@ -1,0 +1,22 @@
+#include "funcionsimple.h"
+
+void PedirNombre(char mensaje[], eEmpleado empleado[]) {
+
+	printf("%s", mensaje);
+	scanf("%s", empleado->nombre);
+
+}
+
+void PedirApellido(char mensaje[], eEmpleado empleado[]) {
+
+	printf("%s", mensaje);
+	scanf("%s", empleado->apellido);
+
+}
+
+void salario(char mensaje[51], eEmpleado sueldo[]) {
+
+	printf("%s", mensaje);
+	scanf("%f", sueldo[]);
+
+}
