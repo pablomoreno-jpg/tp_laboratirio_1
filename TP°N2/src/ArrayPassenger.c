@@ -8,8 +8,6 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght) {
 
 		if (arraysLenght > 0) {
 
-			rtn = 0;
-
 			for (int i = 0; i < arraysLenght; i++) {
 
 				listofPassager[i].isEmpty = VACANT;
@@ -36,15 +34,15 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],
 
 				if (list[i].isEmpty == VACANT) {
 
-					*id = IngresarEntero("ingrese el id del pasajero: ");
-					IngresarCadena("Nombre del pasajero: ", name);
-					AcomodarNombre(name, 51);
-					IngresarCadena("Apellido del pasajero: ", lastName);
-					AcomodarNombre(lastName, 51);
-					*price = IngresarFlotante("precio del vuelo: ");
-					*typePassenger = IngresarEntero(
+					list[i].id = IngresarEntero("ingrese el id del pasajero: ");
+					IngresarCadena("Nombre del pasajero: ", list[i].name);
+					AcomodarNombre(list[i].name, 51);
+					IngresarCadena("Apellido del pasajero: ", list[i].lastName);
+					AcomodarNombre(list[i].lastName, 51);
+					list[i].price = IngresarFlotante("precio del vuelo: ");
+					list[i].typePassenger = IngresarEntero(
 							"ingrese el tipo de pasajero: ");
-					IngresarCadena("ingrese el codigo de vuelo: ", flycode);
+					IngresarCadena("ingrese el codigo de vuelo: ",list[i].flycode);
 					list[i].isEmpty = TAKEN;
 					rtn = 0;
 					break;
@@ -157,7 +155,7 @@ int printPassengers(sPassenger *list, int len) {
 
 				if (list[i].isEmpty == TAKEN) {
 
-					printf("%4d %10s %20s\t\t", list[i].id, list[i].name,
+					printf("%5d %10s %20s\t\t", list[i].id, list[i].name,
 							list[i].lastName);
 					switch (list[i].typePassenger) {
 					case 0:
@@ -203,36 +201,4 @@ int sortPassengersByCode(sPassenger *list, int len, int order) {
 	return rtn;
 }
 
-/*int initFly(sFlystatus flys[], int arraysflys, sPassenger listofPassager[],
- int arraysLenght) {
-
- int rtn = -1;
-
- if (listofPassager != NULL && flys != NULL) {
-
- if (arraysLenght > 0 && arraysflys > 0) {
-
- for (int i = 0; i < arraysflys; i++) {
-
- for (int j = 0; j < arraysLenght; j++) {
-
- IngresarCadena("ingrese el codigo de vuelo",
- flys[j].flycode);
-
- if (strcmp(flys[j].flycode, listofPassager[i].flycode)
- == 0) {
-
- flys[j].flyStaus =IngresarEntero("ingrese el estado del "
- "vuelo 0.cencelado, 1.atrasado, 2.a tiempo");
-
- rtn = 0;
-
- }
- }
- }
- }
- }
-
- return rtn;
- }*/
 

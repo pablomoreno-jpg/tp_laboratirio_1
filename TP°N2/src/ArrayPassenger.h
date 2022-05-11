@@ -5,37 +5,42 @@
 #define VACANT 0
 #define TAKEN 1
 
-#define CANCELED 0
-#define LATED 1
-#define INTIME 2
-
 #define INFANTE 0
 #define ADULTO 1
 #define ANCIANO 2
 #define EMBARAZADA 3
 #define DISCAPACITADO 4
 
-
 typedef struct {
 
-	char flycode[10];
-	int flyStaus;
-	int isNan;
+	char flycode[10];//pk
+	char status[40];
+	int flysStatus;
 
 } sFlystatus;
 
+typedef struct {
+
+	int typePassenger;//pk
+	char typeP[40];
+	int type;
+
+} sTypeofPassangers;
 
 typedef struct {
 
-	int id;
+	int id;//pk
 	char name[51];
 	char lastName[51];
 	float price;
-	char flycode[10];
-	int typePassenger;
+	char flycode[10];//fk
+	int typePassenger;//fk
 	int isEmpty;
 
 } sPassenger;
+
+
+
 
 
 

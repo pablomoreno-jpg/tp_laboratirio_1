@@ -77,5 +77,5 @@ int main(void) {
 		printf("error");
 	}
 
-	return EXIT_SUCCESS;
+	return 0;
 }
