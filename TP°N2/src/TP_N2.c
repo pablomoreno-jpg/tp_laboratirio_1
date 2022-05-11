@@ -34,20 +34,6 @@ int main(void) {
 
 			switch (opcion) {
 			case 1:
-				retorno = addFly(vuelos, Flyslen);
-				switch (retorno) {
-				case -1:
-					printf("\nErro. falta de espacio.\n\n ");
-					break;
-				case 0:
-					printf("\n\ncarga realizada.\n\n");
-					break;
-
-				}
-
-				break;
-			case 2:
-
 				retorno = addPassenger(pasajeros, PassengerLen, &pasajeros->id,
 						pasajeros->name, pasajeros->lastName, &pasajeros->price,
 						&pasajeros->typePassenger, pasajeros->flycode);
@@ -60,10 +46,8 @@ int main(void) {
 					break;
 
 				}
-
 				break;
-
-			case 3:
+			case 2:
 
 				retorno = printPassengers(pasajeros, PassengerLen);
 
@@ -77,6 +61,9 @@ int main(void) {
 
 				}
 
+				break;
+
+			case 3:
 				break;
 
 			case 0:

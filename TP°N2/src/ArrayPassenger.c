@@ -100,34 +100,6 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],
 	return rtn;
 }
 
-/*int addPassengers(sPassenger list[], int len) {
-
- int rtn = -1;
-
- if (list != NULL) {
-
- if (len > 0) {
-
- for (int i = 0; i < len; i++) {
-
- if (list[i].isEmpty == VACANT) {
-
- rtn = addPassenger(list, len, list[i].id, list[i].name,
- list[i].lastName, list[i].price,
- list[i].typePassenger, list[i].flycode);
- list[i].isEmpty = TAKEN;
- break;
-
- }
-
- }
-
- }
-
- }
-
- return rtn;
- }*/
 
 int findPassengerById(sPassenger *list, int len, int id) {
 

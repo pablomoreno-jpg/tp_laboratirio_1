@@ -43,7 +43,6 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght,sFlystatus flys
 int addFly(sFlystatus flys[],int arraysflys);
 int addPassenger(sPassenger list[], int len, int *id, char name[],
 		char lastName[], float *price, int *typePassenger, char flycode[]);
-int addPassengers(sPassenger list[],int len);
 int findPassengerById(sPassenger *list, int len, int id);
 int removePassenger(sPassenger *list, int len, int id);
 int sortPassengers(sPassenger *list, int len, int id);
