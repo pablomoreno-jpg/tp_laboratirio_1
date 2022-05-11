@@ -20,9 +20,9 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght) {
 	return rtn;
 }
 
-
 int addPassenger(sPassenger list[], int len, int *id, char name[],
-		char lastName[], float *price, int *typePassenger, char flycode[]) {
+		char lastName[], float *price, int *typePassenger, char flycode[],
+		sTypeofPassangers tipe[], int typelen) {
 
 	int rtn = -1;
 
@@ -40,9 +40,15 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],
 					IngresarCadena("Apellido del pasajero: ", list[i].lastName);
 					AcomodarNombre(list[i].lastName, 51);
 					list[i].price = IngresarFlotante("precio del vuelo: ");
+					for (int j = 0; j < typelen; j++) {
+
+						printf("%d %s\n", tipe[j].typePassenger, tipe[j].typeP);
+
+					}
 					list[i].typePassenger = IngresarEntero(
 							"ingrese el tipo de pasajero: ");
-					IngresarCadena("ingrese el codigo de vuelo: ",list[i].flycode);
+					IngresarCadena("ingrese el codigo de vuelo: ",
+							list[i].flycode);
 					list[i].isEmpty = TAKEN;
 					rtn = 0;
 					break;
@@ -56,12 +62,9 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],
 	return rtn;
 }
 
-
 int findPassengerById(sPassenger *list, int len, int id) {
 
 	int rtn = -1;
-
-	id = IngresarEntero("Ingrese el id del pasajero: ");
 
 	if (list != NULL) {
 
@@ -71,7 +74,7 @@ int findPassengerById(sPassenger *list, int len, int id) {
 
 				if (list[i].id == id) {
 
-					rtn = id;
+					rtn = 0;
 
 				}
 			}
@@ -140,7 +143,8 @@ int sortPassengers(sPassenger *list, int len, int id) {
 	return rtn;
 }
 
-int printPassengers(sPassenger *list, int len) {
+int printPassengers(sPassenger *list, int len, sTypeofPassangers *tipe,
+		int tipelen) {
 
 	int rtn = -1;
 
@@ -151,44 +155,29 @@ int printPassengers(sPassenger *list, int len) {
 			printf(
 					"id\t|nombre\t\t|aprellido\t|tipo de pasajero\t|codigo de vuelo\t|precio\n");
 
-			for (int i = 0; i < len; i++) {
+			for (int j = 0; j < tipelen; j++) {
 
-				if (list[i].isEmpty == TAKEN) {
+				for (int i = 0; i < len; i++) {
 
-					printf("%5d %10s %20s\t\t", list[i].id, list[i].name,
-							list[i].lastName);
-					switch (list[i].typePassenger) {
-					case 0:
-						printf("INFANTE");
-						break;
-					case 1:
-						printf("ADULTO");
-						break;
-					case 2:
-						printf("ANCIANO");
-						break;
-					case 3:
-						printf("EMBARAZADA");
-						break;
-					case 4:
-						printf("DISCAPACITADO");
-						break;
-					default:
-						printf("desconcocido");
-						break;
+					if (list[i].isEmpty == TAKEN
+							&& list[i].typePassenger == tipe[j].typePassenger) {
+
+						printf("%5d %10s %20s\t\t", list[i].id, list[i].name,
+								list[i].lastName);
+
+						printf("%5s", tipe[j].typeP);
+
+						printf("\t%10s\t %20.2f\n", list[i].flycode,
+								list[i].price);
+
+						rtn = 0;
 
 					}
-
-					printf("\t%20s\t %20.2f\n", list[i].flycode, list[i].price);
-
-					rtn = 0;
 
 				}
 
 			}
-
 		}
-
 	}
 
 	return rtn;
@@ -200,5 +189,4 @@ int sortPassengersByCode(sPassenger *list, int len, int order) {
 
 	return rtn;
 }
-
 
