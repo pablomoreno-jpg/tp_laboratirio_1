@@ -39,8 +39,7 @@ typedef struct {
 
 
 
-int initPassengers(sPassenger listofPassager[], int arraysLenght,sFlystatus flys[],int arraysflys);
-int addFly(sFlystatus flys[],int arraysflys);
+int initPassengers(sPassenger listofPassager[], int arraysLenght);
 int addPassenger(sPassenger list[], int len, int *id, char name[],
 		char lastName[], float *price, int *typePassenger, char flycode[]);
 int findPassengerById(sPassenger *list, int len, int id);

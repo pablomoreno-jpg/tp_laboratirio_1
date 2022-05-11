@@ -1,7 +1,6 @@
 #include "ArrayPassenger.h"
 
-int initPassengers(sPassenger listofPassager[], int arraysLenght,
-		sFlystatus flys[], int arraysflys) {
+int initPassengers(sPassenger listofPassager[], int arraysLenght) {
 
 	int rtn = -1;
 
@@ -14,20 +13,7 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght,
 			for (int i = 0; i < arraysLenght; i++) {
 
 				listofPassager[i].isEmpty = VACANT;
-
-			}
-		}
-	}
-
-	if (flys != NULL) {
-
-		if (arraysflys > 0) {
-
-			rtn = 0;
-
-			for (int i = 0; i < arraysflys; i++) {
-
-				flys[i].isNan = VACANT;
+				rtn = 0;
 
 			}
 		}
@@ -36,34 +22,6 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght,
 	return rtn;
 }
 
-int addFly(sFlystatus flys[], int arraysflys) {
-
-	int rtn = -1;
-
-	if (flys != NULL) {
-
-		if (arraysflys > 0) {
-
-			for (int i = 0; i < arraysflys; i++) {
-
-				if (flys[i].isNan == VACANT) {
-
-					IngresarCadena("ingrese el codigo de vuelo: ",
-							flys[i].flycode);
-					flys[i].flyStaus = IngresarEntero(
-							"ingrese el estado del vuelo: ");
-					flys[i].isNan = TAKEN;
-					break;
-
-				}
-
-			}
-
-		}
-
-	}
-	return rtn;
-}
 
 int addPassenger(sPassenger list[], int len, int *id, char name[],
 		char lastName[], float *price, int *typePassenger, char flycode[]) {

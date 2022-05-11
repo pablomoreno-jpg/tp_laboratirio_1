@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : TP_N2.c
- Author      : Moreno Pablo
+ Author      : 
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -22,9 +22,8 @@ int main(void) {
 
 	int opcion;
 	sPassenger pasajeros[PassengerLen];
-	sFlystatus vuelos[Flyslen];
 
-	retorno = initPassengers(pasajeros, PassengerLen, vuelos, Flyslen);
+	retorno = initPassengers(pasajeros, PassengerLen);
 
 	if (retorno == 0) {
 
