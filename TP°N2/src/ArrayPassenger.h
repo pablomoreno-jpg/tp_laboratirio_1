@@ -7,14 +7,6 @@
 
 typedef struct {
 
-	char flycode[10]; //pk
-	char status[40];
-	int flysStatus;
-
-} sFlystatus;
-
-typedef struct {
-
 	int typePassenger; //pk
 	char typeP[40];
 
@@ -26,7 +18,7 @@ typedef struct {
 	char name[51];
 	char lastName[51];
 	float price;
-	char flycode[10]; //fk
+	char flycode[10];
 	int typePassenger; //fk
 	int isEmpty;
 
@@ -37,6 +29,7 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],
 		char lastName[], float *price, int *typePassenger, char flycode[],
 		sTypeofPassangers tipe[], int typelen);
 int findPassengerById(sPassenger *list, int len, int id);
+int modifyPassengers(sPassenger *list, int len, int id,sTypeofPassangers *tipe, int tipelen);
 int removePassenger(sPassenger *list, int len, int id);
 int sortPassengers(sPassenger *list, int len, int id);
 int sortPassengersByCode(sPassenger *list, int len, int order);
