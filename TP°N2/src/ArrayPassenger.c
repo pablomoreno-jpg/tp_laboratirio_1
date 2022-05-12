@@ -113,7 +113,7 @@ int removePassenger(sPassenger *list, int len, int id) {
 	return rtn;
 }
 
-int sortPassengers(sPassenger *list, int len, int id) {
+int sortPassengers(sPassenger *list, int len) {
 
 	int rtn = -1;
 	sPassenger auxiliar;
@@ -126,13 +126,25 @@ int sortPassengers(sPassenger *list, int len, int id) {
 
 				for (int j = i + 1; j < len; j++) {
 
-					if (stricmp(list[i].lastName, list[j].lastName) > 0
-							&& list[i].typePassenger > list[j].typePassenger) {
+					if (list[i].typePassenger < list[j].typePassenger) {
 
 						auxiliar = list[i];
 						list[i] = list[j];
 						list[j] = auxiliar;
 						rtn = 0;
+
+					}
+					else{
+
+						if(strcmp(list[i].lastName, list[j].lastName) > 0){
+
+							auxiliar = list[i];
+							list[i] = list[j];
+							list[j] = auxiliar;
+							rtn = 0;
+
+
+						}
 
 					}
 				}
@@ -159,7 +171,7 @@ int printPassengers(sPassenger *list, int len, sTypeofPassangers *tipe,
 					if (list[i].isEmpty == TAKEN
 							&& list[i].typePassenger == tipe[j].typePassenger) {
 
-						printf("|%4d|%10s|%20s|%10s|%10s|%4.2f|\n", list[i].id,
+						printf("|%4d|%15s|%15s|%15s|%10s|%8.2f|\n", list[i].id,
 								list[i].name, list[i].lastName, tipe[j].typeP,
 								list[i].flycode, list[i].price);
 

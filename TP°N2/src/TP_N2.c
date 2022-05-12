@@ -56,7 +56,6 @@ int main(void) {
 				}
 				break;
 			case 2:
-
 				if (flagEntrada == 1) {
 					id =IngresarEntero("ingrese el id de del pasajero a quiere modificar: ");
 
@@ -81,18 +80,13 @@ int main(void) {
 						printf("\nno se encontro el pasajero\n\n");
 
 					}
-
-
-
 				}
 				else{
 
 					printf("\npor favor ingrese un pasajero primero.\n\n");
 
 				}
-
 				break;
-
 			case 3:
 				if (flagEntrada == 1){
 
@@ -125,32 +119,48 @@ int main(void) {
 					printf("\npor favor ingrese un pasajero primero.\n\n");
 
 				}
-
 				break;
-
 			case 4:
 
 				if (flagEntrada == 1){
 
-					retorno = printPassengers(pasajeros, PassengerLen, tiposdePasajeros, cantidaddeTipos);
+					retorno = IngresarEntero("1.Mostrar una lista ordenada por apellido y por tipo de pasajero."
+							"\n2.mostrar una lista Total y promedio de los precios de los pasajes, y cuántos pasajeros\n "
+							"superan el precio promedio.\n3.Listado de los pasajeros por Código de vuelo y estados de vuelos ‘ACTIVO’\n"
+							"elija una opcion: ");
+
 					switch (retorno) {
-						case -1:
-							printf("\nno se econotro el id\n\n ");
+						case 1:
+
+							retorno = sortPassengers(pasajeros, PassengerLen);
+
+							if(retorno == -1){
+
+								printf("error");
+
+							}
+							else{
+
+								retorno = printPassengers(pasajeros, PassengerLen, tiposdePasajeros, cantidaddeTipos);
+							}
+
 							break;
-						case 0:
-							printf("\n\nlista actual.\n\n");
+						case 2:
+
+							break;
+						case 3:
+							break;
+						default:
+							printf("\nopcion incorrecta.\n\n ");
 							break;
 						}
 						break;
-
 				}
 				else{
-
 
 					printf("\npor favor ingrese un pasajero primero.\n\n");
 
 				}
-
 				break;
 
 			case 5:
