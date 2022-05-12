@@ -5,6 +5,13 @@
 #define VACANT 0
 #define TAKEN 1
 
+typedef struct{
+
+	char flyCode[10];
+	int flyStatus;
+
+}sFlys;
+
 typedef struct {
 
 	int typePassenger; //pk
@@ -32,6 +39,7 @@ int removePassenger(sPassenger *list, int len, int id);
 int sortPassengers(sPassenger *list, int len);
 int sortPassengersByCode(sPassenger *list, int len, int order);
 int printPassengers(sPassenger *list, int len,sTypeofPassangers *tipe, int tipelen);
+int addFlys (sFlys *flys,int lenflys);
 
 
 

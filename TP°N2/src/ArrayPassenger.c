@@ -126,7 +126,8 @@ int sortPassengers(sPassenger *list, int len) {
 
 				for (int j = i + 1; j < len; j++) {
 
-					if (list[i].typePassenger < list[j].typePassenger) {
+					if (list[i].typePassenger == list[j].typePassenger &&
+							strcmp(list[i].lastName, list[j].lastName) > 0) {
 
 						auxiliar = list[i];
 						list[i] = list[j];
@@ -136,7 +137,7 @@ int sortPassengers(sPassenger *list, int len) {
 					}
 					else{
 
-						if(strcmp(list[i].lastName, list[j].lastName) > 0){
+						if (list[i].typePassenger == list[j].typePassenger){
 
 							auxiliar = list[i];
 							list[i] = list[j];
@@ -246,10 +247,21 @@ int modifyPassengers(sPassenger *list, int len, int id,sTypeofPassangers *tipe, 
 	return rtn;
 }
 
-/*int sortPassengersByCode(sPassenger *list, int len, int order) {
+int sortPassengersByCode(sPassenger *list, int len, int order) {
 
  int rtn = -1;
 
+ if(list != NULL){
+
+	 if(len > 0){
+
+
+
+	 }
+
+
+ }
+
  return rtn;
- }*/
+ }
 

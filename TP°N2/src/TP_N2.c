@@ -8,9 +8,8 @@
  ============================================================================
  */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "nexo.h"
+
 #define PassengerLen 2000
 #define cantidaddeTipos 5
 
@@ -24,8 +23,7 @@ int main(void) {
 	int opcion;
 	sPassenger pasajeros[PassengerLen];
 	sTypeofPassangers tiposdePasajeros[cantidaddeTipos] = { { 0, "INFANTE" }, {
-			1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,
-			"DISCAPACITADO" } };
+			1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,"DISCAPACITADO" } };
 
 	retorno = initPassengers(pasajeros, PassengerLen);
 
@@ -126,7 +124,8 @@ int main(void) {
 
 					retorno = IngresarEntero("1.Mostrar una lista ordenada por apellido y por tipo de pasajero."
 							"\n2.mostrar una lista Total y promedio de los precios de los pasajes, y cuántos pasajeros\n "
-							"superan el precio promedio.\n3.Listado de los pasajeros por Código de vuelo y estados de vuelos ‘ACTIVO’\n"
+							" superan el precio promedio.\n3.Listado de los pasajeros por Código de vuelo y "
+							"estados de vuelos ‘ACTIVO’\n"
 							"elija una opcion: ");
 
 					switch (retorno) {
