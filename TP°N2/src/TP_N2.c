@@ -12,6 +12,7 @@
 
 #define PassengerLen 2000
 #define cantidaddeTipos 5
+#define Vuelostotales 30
 
 int main(void) {
 
@@ -22,8 +23,9 @@ int main(void) {
 
 	int opcion;
 	sPassenger pasajeros[PassengerLen];
-	sTypeofPassangers tiposdePasajeros[cantidaddeTipos] = { { 0, "INFANTE" }, {
-			1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,"DISCAPACITADO" } };
+	sFlys vuelos[Vuelostotales];
+	sTypeofPassangers tiposdePasajeros[cantidaddeTipos] = { { 0, "INFANTE" },
+			{1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,"DISCAPACITADO" } };
 
 	retorno = initPassengers(pasajeros, PassengerLen);
 
@@ -32,9 +34,8 @@ int main(void) {
 		do {
 
 			opcion =
-					IngresarEntero(
-							"1)ingresar pasajero.\n2)modificar pasajero.\n3)eliminar pasajero."
-							"\n4)mostrar pasajeros.\n5)salir.\neliga una opcion: ");
+					IngresarEntero("1)ingresar pasajero.\n2)inicializar vuelo\n3)modificar pasajero."
+							"\n4)eliminar pasajero.\n5)mostrar pasajeros.\n6)salir.\neliga una opcion: ");
 
 			switch (opcion) {
 			case 1:
@@ -50,10 +51,32 @@ int main(void) {
 					printf("\ncarga realizada.\n\n");
 					flagEntrada = 1;
 					break;
+				}
+
+				break;
+			case 2:
+
+				if (flagEntrada == 1){
+
+					retorno = initfly(vuelos, Vuelostotales, pasajeros, Vuelostotales);
+
+					switch (retorno) {
+					case -1:
+						printf("\nError. falta de espacio.\n\n ");
+						break;
+					case 0:
+						printf("\nel stado del vuelo se cargo exitosamente.\n\n");
+						flagEntrada = 1;
+						break;
+					}
+				}
+				else{
+
+					printf("primero ingrese un pasajero");
 
 				}
 				break;
-			case 2:
+			case 3:
 				if (flagEntrada == 1) {
 					id =IngresarEntero("ingrese el id de del pasajero a quiere modificar: ");
 
@@ -85,7 +108,7 @@ int main(void) {
 
 				}
 				break;
-			case 3:
+			case 4:
 				if (flagEntrada == 1){
 
 					id = IngresarEntero("ingrese el id de del pasajero a quiere eliminar: ");
@@ -118,7 +141,7 @@ int main(void) {
 
 				}
 				break;
-			case 4:
+			case 5:
 
 				if (flagEntrada == 1){
 
@@ -162,7 +185,7 @@ int main(void) {
 				}
 				break;
 
-			case 5:
+			case 6:
 				printf("\n\nadios ...");
 				break;
 
@@ -171,7 +194,7 @@ int main(void) {
 				break;
 			}
 
-		} while (opcion != 5);
+		} while (opcion != 6);
 	} else {
 
 		printf("error");

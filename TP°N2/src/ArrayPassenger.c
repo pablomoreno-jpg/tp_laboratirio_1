@@ -265,3 +265,39 @@ int sortPassengersByCode(sPassenger *list, int len, int order) {
  return rtn;
  }
 
+
+int initfly (sFlys *flys,int lenflys,sPassenger *list, int len){
+
+	int rtn = -1;
+
+	if(flys != NULL && list != NULL){
+
+
+		if(len > 0 && lenflys > 0){
+
+			for(int i = 0; i < lenflys; i++){
+
+				IngresarCadena("ingrese un vuelo:  ", flys[i].flyCode);
+
+				for(int j = 0; j < len; j++){
+
+					if(flys[i].flyCode == list[j].flycode){
+
+						flys[i].flyStatus = IngresarEntero("\n0.cancelado\n1.activoelija el estado de vuelo:");
+						rtn = 0;
+
+					}
+
+				}
+
+
+			}
+		}
+
+
+
+	}
+
+
+	return rtn;
+}
