@@ -18,6 +18,7 @@ int main(void) {
 
 	setbuf(stdout, NULL);
 	int retorno;
+	float promedio;
 	int flagEntrada = 0;
 	int id;
 
@@ -98,7 +99,7 @@ int main(void) {
 					}
 					else{
 
-						printf("\nno se encontro el pasajero\n\n");
+
 
 					}
 				}
@@ -158,7 +159,7 @@ int main(void) {
 
 							if(retorno == -1){
 
-								printf("error");
+								printf("\nerror.\n\n");
 
 							}
 							else{
@@ -168,6 +169,30 @@ int main(void) {
 
 							break;
 						case 2:
+
+							promedio = PromediaryEncotrarPrecio(pasajeros, PassengerLen);
+
+							printf("el promedio de los precios es de %.2f",promedio);
+
+							if(promedio <= 0){
+
+								printf("\nerro.\n\n");
+							}
+							else{
+
+								retorno = CompararPromeido(pasajeros, PassengerLen, promedio);
+
+								switch(retorno){
+								case -1:
+									printf("\nningun pasajero supera el promedio.\n\n");
+									break;
+								case 0:
+									printf("\nson los pasajeros que superar el promedio\n\n");
+									break;
+
+								}
+							}
+
 
 							break;
 						case 3:

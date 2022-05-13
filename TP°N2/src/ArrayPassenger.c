@@ -265,7 +265,6 @@ int sortPassengersByCode(sPassenger *list, int len, int order) {
  return rtn;
  }
 
-
 int initfly (sFlys *flys,int lenflys,sPassenger *list, int len){
 
 	int rtn = -1;
@@ -297,6 +296,78 @@ int initfly (sFlys *flys,int lenflys,sPassenger *list, int len){
 
 
 	}
+
+
+	return rtn;
+}
+
+float PromediarPrecio(float precio, int cantidadTotal){
+
+	float promedio;
+
+	promedio = precio / cantidadTotal;
+
+
+	return promedio;
+}
+
+float PromediaryEncotrarPrecio(sPassenger *list, int len){
+
+	float rtn = -1;
+	int contador = 0;
+	float precio = 0;
+
+	if(list != NULL){
+
+		if(len > 0){
+
+			for(int i = 0; i < len; i++){
+
+				if(list[i].isEmpty == TAKEN){
+
+					precio =+ list[i].price;
+					contador++;
+
+				}
+
+			}
+
+			rtn = PromediarPrecio(precio, contador);
+		}
+
+	}
+
+	return rtn;
+}
+
+int CompararPromeido(sPassenger *list, int len,float promedio){
+
+
+	int rtn = -1;
+
+
+	if(list != NULL){
+
+		if(len > 0){
+
+			for(int i = 0; i < len; i++){
+
+				if(list[i].isEmpty== TAKEN && list[i].price > promedio){
+
+					printf("|%4d|%15s|%15s|\n",list[i].id,list[i].name, list[i].lastName);
+					rtn = 0;
+
+				}
+
+
+			}
+
+		}
+
+
+
+	}
+
 
 
 	return rtn;
