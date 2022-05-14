@@ -64,3 +64,4 @@ void AcomodarNombre(char cadena[], int sizeCadena) {
 	}
 
 }
+

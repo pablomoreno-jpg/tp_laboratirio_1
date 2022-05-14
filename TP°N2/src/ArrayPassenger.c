@@ -35,17 +35,16 @@ int addPassenger(sPassenger list[], int len, int *id, char name[],char lastName[
 
 					list[i].id = idAuto;
 					IngresarCadena("Nombre del pasajero: ", list[i].name);
-					AcomodarNombre(list[i].name, 51);
+					AcomodarNombre(list[i].name, sizeof(list[i].name));
 					IngresarCadena("Apellido del pasajero: ", list[i].lastName);
-					AcomodarNombre(list[i].lastName, 51);
+					AcomodarNombre(list[i].lastName, sizeof(list[i].lastName));
 					list[i].price = IngresarFlotante("precio del vuelo: ");
 					for (int j = 0; j < typelen; j++) {
 
 						printf("%d %s\n", tipe[j].typePassenger, tipe[j].typeP);
 
 					}
-					list[i].typePassenger = IngresarEntero(
-							"ingrese el tipo de pasajero: ");
+					list[i].typePassenger = IngresarEntero("ingrese el tipo de pasajero: ");
 					IngresarCadena("ingrese el codigo de vuelo: ",
 							list[i].flycode);
 					list[i].flysStatus = IngresarEntero("1.ACTIVO\n0.Cancelado\ningrese el estado del vuelo: ");

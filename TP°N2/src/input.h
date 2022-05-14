@@ -8,3 +8,4 @@ char IngreseUnCaracter(char*);
 void IngresarVector(char*, int, int);
 void IngresarCadena(char[], char[]);
 void AcomodarNombre (char [],int);
+
