@@ -12,40 +12,40 @@
 
 #define PassengerLen 2000
 #define cantidaddeTipos 5
-#define Vuelostotales 30
 
 int main(void) {
 
 	setbuf(stdout, NULL);
 	int retorno;
+	int id;
 	float promedio;
 	int flagEntrada = 0;
-	int flagvuelos = 0;
-	int id;
+	int idAutomatico = 0;
+
 
 	int opcion;
 	sPassenger pasajeros[PassengerLen];
-	sFlys vuelos[Vuelostotales];
-	sTypeofPassangers tiposdePasajeros[cantidaddeTipos] = { { 0, "INFANTE" },
-			{1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,"DISCAPACITADO" } };
+	sTypeofPassangers tiposdePasajeros[cantidaddeTipos] = { { 0, "VIP" },
+			{1, "PREMIUM" }, { 2, "DISCAPACITADO" }, { 3, "ADULTO MAYOR" }, { 4,"NORMAL" } };
 
 	retorno = initPassengers(pasajeros, PassengerLen);
-	retorno = initfly(vuelos, Vuelostotales);
 
 	if (retorno == 0) {
 
 		do {
 
 			opcion =
-					IngresarEntero("1)ingresar pasajero.\n2)inicializar vuelo\n3)modificar pasajero."
-							"\n4)eliminar pasajero.\n5)mostrar pasajeros.\n6)salir.\neliga una opcion: ");
+					IngresarEntero("1)ingresar pasajero.\n2)modificar pasajero."
+							"\n3)eliminar pasajero.\n4)mostrar pasajeros.\n5)salir.\neliga una opcion: ");
 
 			switch (opcion) {
 			case 1:
-				retorno = addPassenger(pasajeros, PassengerLen, &pasajeros->id,
-						pasajeros->name, pasajeros->lastName, &pasajeros->price,
-						&pasajeros->typePassenger, pasajeros->flycode,
-						tiposdePasajeros, cantidaddeTipos);
+
+				idAutomatico ++;
+
+				retorno = addPassenger(pasajeros, PassengerLen, &pasajeros->id,pasajeros->name, pasajeros->lastName, &pasajeros->price,
+						&pasajeros->typePassenger, &pasajeros->flysStatus,pasajeros->flycode,
+						tiposdePasajeros, cantidaddeTipos,idAutomatico);
 				switch (retorno) {
 				case -1:
 					printf("\nError. falta de espacio.\n\n ");
@@ -58,28 +58,6 @@ int main(void) {
 
 				break;
 			case 2:
-
-				if (flagEntrada == 1){
-
-					retorno = addtfly(vuelos, Vuelostotales, pasajeros, Vuelostotales);
-
-					switch (retorno) {
-					case -1:
-						printf("\nError. falta de espacio.\n\n ");
-						break;
-					case 0:
-						printf("\nel stado del vuelo se cargo exitosamente.\n\n");
-						flagvuelos = 1;
-						break;
-					}
-				}
-				else{
-
-					printf("primero ingrese un pasajero");
-
-				}
-				break;
-			case 3:
 				if (flagEntrada == 1) {
 					id =IngresarEntero("ingrese el id de del pasajero a quiere modificar: ");
 
@@ -111,7 +89,7 @@ int main(void) {
 
 				}
 				break;
-			case 4:
+			case 3:
 				if (flagEntrada == 1){
 
 					id = IngresarEntero("ingrese el id de del pasajero a quiere eliminar: ");
@@ -120,7 +98,7 @@ int main(void) {
 
 					if(retorno > 0){
 
-						retorno = removePassenger(pasajeros, PassengerLen, retorno,vuelos,Vuelostotales);
+						retorno = removePassenger(pasajeros, PassengerLen, retorno);
 
 						switch(retorno){
 						case -1:
@@ -144,14 +122,14 @@ int main(void) {
 
 				}
 				break;
-			case 5:
+			case 4:
 
 				if (flagEntrada == 1){
 
 					retorno = IngresarEntero("1.Mostrar una lista Ordenada por apellido."
 							"\n2.Mostar el promedio total del precio de los vuelos y pasajeros\n "
 							"que superan el promedio total,en caso de haberlos\n"
-							"3.Mostar listado de los vuelos activos\n"
+							"3.Mostar listado ordenados por el estado de vuelo\n"
 							"elija una opcion: ");
 
 					switch (retorno) {
@@ -159,14 +137,13 @@ int main(void) {
 
 							retorno = sortPassengers(pasajeros, PassengerLen);
 
-							if(retorno == -1){
-
+							switch(retorno){
+							case -1:
 								printf("\nerror.\n\n");
-
-							}
-							else{
-
+								break;
+							default:
 								retorno = printPassengers(pasajeros, PassengerLen, tiposdePasajeros, cantidaddeTipos);
+								break;
 							}
 
 							break;
@@ -174,7 +151,7 @@ int main(void) {
 
 							promedio = PromediaryEncotrarPrecio(pasajeros, PassengerLen);
 
-							printf("el promedio de los precios es de %.2f",promedio);
+							printf("el promedio de los precios es de %.2f\n",promedio);
 
 							if(promedio <= 0){
 
@@ -198,16 +175,16 @@ int main(void) {
 
 							break;
 						case 3:
-							if(flagvuelos == 1){
+							retorno = sortPassengersByCode(pasajeros, PassengerLen);
 
-
-
+							switch(retorno){
+							case -1:
+								printf("\nerror.\n\n");
+								break;
+							default:
+								retorno = printPassengers(pasajeros, PassengerLen, tiposdePasajeros, cantidaddeTipos);
+								break;
 							}
-							else{
-
-								printf("\ninicialice unn vuelo primero.\n\n");
-							}
-
 							break;
 						default:
 							printf("\nopcion incorrecta.\n\n ");
@@ -222,7 +199,7 @@ int main(void) {
 				}
 				break;
 
-			case 6:
+			case 5:
 				printf("\n\nadios ...");
 				break;
 
@@ -231,7 +208,7 @@ int main(void) {
 				break;
 			}
 
-		} while (opcion != 6);
+		} while (opcion != 5);
 	} else {
 
 		printf("error");
