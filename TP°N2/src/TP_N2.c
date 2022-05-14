@@ -20,6 +20,7 @@ int main(void) {
 	int retorno;
 	float promedio;
 	int flagEntrada = 0;
+	int flagvuelos = 0;
 	int id;
 
 	int opcion;
@@ -29,6 +30,7 @@ int main(void) {
 			{1, "ADULTO" }, { 2, "ANCIANO" }, { 3, "EMBARAZADA" }, { 4,"DISCAPACITADO" } };
 
 	retorno = initPassengers(pasajeros, PassengerLen);
+	retorno = initfly(vuelos, Vuelostotales);
 
 	if (retorno == 0) {
 
@@ -59,7 +61,7 @@ int main(void) {
 
 				if (flagEntrada == 1){
 
-					retorno = initfly(vuelos, Vuelostotales, pasajeros, Vuelostotales);
+					retorno = addtfly(vuelos, Vuelostotales, pasajeros, Vuelostotales);
 
 					switch (retorno) {
 					case -1:
@@ -67,7 +69,7 @@ int main(void) {
 						break;
 					case 0:
 						printf("\nel stado del vuelo se cargo exitosamente.\n\n");
-						flagEntrada = 1;
+						flagvuelos = 1;
 						break;
 					}
 				}
@@ -118,7 +120,7 @@ int main(void) {
 
 					if(retorno > 0){
 
-						retorno = removePassenger(pasajeros, PassengerLen, retorno);
+						retorno = removePassenger(pasajeros, PassengerLen, retorno,vuelos,Vuelostotales);
 
 						switch(retorno){
 						case -1:
@@ -146,10 +148,10 @@ int main(void) {
 
 				if (flagEntrada == 1){
 
-					retorno = IngresarEntero("1.Mostrar una lista ordenada por apellido y por tipo de pasajero."
-							"\n2.mostrar una lista Total y promedio de los precios de los pasajes, y cuántos pasajeros\n "
-							" superan el precio promedio.\n3.Listado de los pasajeros por Código de vuelo y "
-							"estados de vuelos ‘ACTIVO’\n"
+					retorno = IngresarEntero("1.Mostrar una lista Ordenada por apellido."
+							"\n2.Mostar el promedio total del precio de los vuelos y pasajeros\n "
+							"que superan el promedio total,en caso de haberlos\n"
+							"3.Mostar listado de los vuelos activos\n"
 							"elija una opcion: ");
 
 					switch (retorno) {
@@ -196,6 +198,16 @@ int main(void) {
 
 							break;
 						case 3:
+							if(flagvuelos == 1){
+
+
+
+							}
+							else{
+
+								printf("\ninicialice unn vuelo primero.\n\n");
+							}
+
 							break;
 						default:
 							printf("\nopcion incorrecta.\n\n ");

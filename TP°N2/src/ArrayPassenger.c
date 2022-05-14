@@ -84,7 +84,7 @@ int findPassengerById(sPassenger *list, int len, int id) {
 	return rtn;
 }
 
-int removePassenger(sPassenger *list, int len, int id) {
+int removePassenger(sPassenger *list, int len, int id,sFlys *flys,int lenflys) {
 
 	int rtn = -1;
 
@@ -94,18 +94,21 @@ int removePassenger(sPassenger *list, int len, int id) {
 
 			id = findPassengerById(list, len, id);
 
-			for (int i = 0; i < len; i++) {
+			for(int j = 0; j < lenflys;j++){
 
-				if (list[i].id == id) {
+				for (int i = 0; i < len; i++) {
 
-					list[i].isEmpty = VACANT;
-					rtn = 0;
-					break;
+					if (list[i].id == id && flys[j].flyCode == list[i].flycode) {
+
+						list[i].isEmpty = VACANT;
+						flys[j].isEmpty = VACANT;
+						rtn = 0;
+						break;
+
+					}
 
 				}
-
 			}
-
 		}
 
 	}
@@ -265,7 +268,7 @@ int sortPassengersByCode(sPassenger *list, int len, int order) {
  return rtn;
  }
 
-int initfly (sFlys *flys,int lenflys,sPassenger *list, int len){
+int addtfly (sFlys *flys,int lenflys,sPassenger *list, int len){
 
 	int rtn = -1;
 
@@ -280,22 +283,40 @@ int initfly (sFlys *flys,int lenflys,sPassenger *list, int len){
 
 				for(int j = 0; j < len; j++){
 
-					if(flys[i].flyCode == list[j].flycode){
+					if(flys[i].flyCode == list[j].flycode && flys[i].isEmpty == VACANT){
 
 						flys[i].flyStatus = IngresarEntero("\n0.cancelado\n1.activoelija el estado de vuelo:");
 						rtn = 0;
+						flys[i].isEmpty = TAKEN;
 
 					}
 
 				}
-
-
 			}
 		}
 
-
-
 	}
+
+
+	return rtn;
+}
+
+int initfly (sFlys *flys,int lenflys){
+
+	int rtn = -1;
+
+	if (flys != NULL) {
+
+			if (lenflys > 0) {
+
+				for (int i = 0; i < lenflys; i++) {
+
+					flys[i].isEmpty = VACANT;
+					rtn = 0;
+
+				}
+			}
+		}
 
 
 	return rtn;
@@ -372,3 +393,4 @@ int CompararPromeido(sPassenger *list, int len,float promedio){
 
 	return rtn;
 }
+

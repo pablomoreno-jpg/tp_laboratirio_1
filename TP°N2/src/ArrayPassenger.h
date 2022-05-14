@@ -9,6 +9,7 @@ typedef struct{
 
 	char flyCode[10];//pk
 	int flyStatus;
+	int isEmpty;
 
 }sFlys;
 
@@ -36,14 +37,14 @@ int initPassengers(sPassenger listofPassager[], int arraysLenght);
 int addPassenger(sPassenger list[], int len, int *id, char name[],char lastName[], float *price, int *typePassenger, char flycode[],sTypeofPassangers tipe[], int typelen);
 int findPassengerById(sPassenger *list, int len, int id);
 int modifyPassengers(sPassenger *list, int len, int id,sTypeofPassangers *tipe, int tipelen);
-int removePassenger(sPassenger *list, int len, int id);
+int removePassenger(sPassenger *list, int len, int id,sFlys *flys,int lenflys);
 int sortPassengers(sPassenger *list, int len);
-int sortPassengersByCode(sPassenger *list, int len, int order);
 int printPassengers(sPassenger *list, int len,sTypeofPassangers *tipe, int tipelen);
-int initfly (sFlys *flys,int lenflys,sPassenger *list, int len);
+int addtfly (sFlys *flys,int lenflys,sPassenger *list, int len);
+int initfly (sFlys *flys,int lenflys);
 float PromediarPrecio(float precio, int cantidadTotal);
 float PromediaryEncotrarPrecio(sPassenger *list, int len);
 int CompararPromeido(sPassenger *list, int len,float promedio);
-
+int sortPassengersByCode(sPassenger *list, int len, int order);
 
 
